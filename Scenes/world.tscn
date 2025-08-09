@@ -1,13 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://cv44tvj0o5jcf"]
 
-[ext_resource type="Script" path="res://Scripts/System/Managers/SteamManager.gd" id="1_b1cy8"]
-[ext_resource type="Script" path="res://Scripts/System/Managers/LobbyManager.gd" id="2_tpclr"]
-[ext_resource type="Script" path="res://Scripts/System/Networking/NetworkManager.gd" id="3_hsc1b"]
-[ext_resource type="Script" path="res://Scripts/System/Managers/MenuManager.gd" id="4_07e24"]
-[ext_resource type="Script" path="res://Scripts/System/Managers/MapManager.gd" id="5_qqweo"]
+[ext_resource type="Script" uid="uid://cdeg0wqixnig2" path="res://Scripts/System/Managers/SteamManager.gd" id="1_b1cy8"]
+[ext_resource type="Script" uid="uid://biqkpa8v17283" path="res://Scripts/System/Managers/LobbyManager.gd" id="2_tpclr"]
+[ext_resource type="Script" uid="uid://djdn5qy2rvvkp" path="res://Scripts/System/Networking/NetworkManager.gd" id="3_hsc1b"]
+[ext_resource type="Script" uid="uid://c51x6rr74nuuc" path="res://Scripts/System/Managers/MenuManager.gd" id="4_07e24"]
+[ext_resource type="Script" uid="uid://cjsu4s1as2tyl" path="res://Scripts/System/Managers/MapManager.gd" id="5_qqweo"]
 [ext_resource type="PackedScene" uid="uid://b7pp3skomvnhc" path="res://Scenes/level.tscn" id="6_1scc6"]
 [ext_resource type="Theme" uid="uid://c4f2loxebxryi" path="res://Assets/Theme/main.tres" id="7_gin60"]
-[ext_resource type="Script" path="res://Scenes/check_box.gd" id="8_pctin"]
+[ext_resource type="Script" uid="uid://c6nvpsl1hp1ky" path="res://Scenes/check_box.gd" id="8_pctin"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nfy72"]
 font_size = 25
@@ -283,7 +283,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P1Container"]
 handle_input_locally = false
-size = Vector2i(574, 648)
+size = Vector2i(2, 2)
 render_target_update_mode = 0
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P1Container/SubViewport"]
@@ -319,7 +319,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P2Container"]
 handle_input_locally = false
-size = Vector2i(574, 648)
+size = Vector2i(2, 2)
 render_target_update_mode = 0
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P2Container/SubViewport"]
@@ -356,7 +356,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P3Container"]
 handle_input_locally = false
-size = Vector2i(574, 322)
+size = Vector2i(2, 2)
 render_target_update_mode = 0
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P3Container/SubViewport"]
@@ -393,7 +393,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P4Container"]
 handle_input_locally = false
-size = Vector2i(574, 322)
+size = Vector2i(2, 2)
 render_target_update_mode = 0
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control/SplitScreenMultiplayerMenu/LocalSplitSreenGridContainer/P4Container/SubViewport"]

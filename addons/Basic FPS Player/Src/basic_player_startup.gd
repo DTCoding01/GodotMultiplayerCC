@@ -19,7 +19,7 @@ func _enter_tree():
 ###########################
 
 @export_category("Mouse Capture")
-@export var CAPTURE_ON_START := true
+@export var CAPTURE_ON_START := false
 
 @export_category("Movement")
 @export_subgroup("Settings")
@@ -74,9 +74,6 @@ func _ready():
 		if Engine.is_editor_hint():
 			return
 
-		# Capture mouse if set to true
-		if CAPTURE_ON_START:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 		head_start_pos = $Head.position
 
@@ -113,7 +110,7 @@ func _input(event):
 			return
 			
 		# Listen for mouse movement and check if mouse is captured
-		if event is InputEventMouseMotion && Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		if event is InputEventMouseMotion:
 			set_rotation_target(event.relative)
 
 func set_rotation_target(mouse_motion : Vector2):

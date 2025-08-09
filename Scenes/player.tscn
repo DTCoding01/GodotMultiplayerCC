@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://tv4ar5fv1s6e"]
 
-[ext_resource type="Script" path="res://addons/Basic FPS Player/Src/basic_player_startup.gd" id="1_4m64u"]
-[ext_resource type="Script" path="res://Scripts/System/Networking/PlayerSyncManager.gd" id="2_ujs6x"]
+[ext_resource type="Script" uid="uid://bnr4m2s54yyu2" path="res://addons/Basic FPS Player/Src/basic_player_startup.gd" id="1_4m64u"]
+[ext_resource type="Script" uid="uid://cqfp25f7gwyqd" path="res://Scripts/System/Networking/PlayerSyncManager.gd" id="2_ujs6x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e0fv5"]
 albedo_color = Color(0.266667, 1, 1, 1)
@@ -18,6 +18,7 @@ properties/1/replication_mode = 1
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_4m64u")
+CAPTURE_ON_START = true
 KEY_BIND_UP = "forward"
 KEY_BIND_LEFT = "left"
 KEY_BIND_RIGHT = "right"
